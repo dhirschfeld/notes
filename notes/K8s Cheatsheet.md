@@ -1,12 +1,12 @@
 ---
 favorited: true
 tags: [Kubernetes]
-title: Cheatsheet
+title: K8s Cheatsheet
 created: '2022-01-18T11:18:41.262Z'
-modified: '2022-01-18T11:19:03.971Z'
+modified: '2022-07-28T01:57:18.621Z'
 ---
 
-# Cheatsheet
+# K8s Cheatsheet
 
 Sort by age:
 ```
