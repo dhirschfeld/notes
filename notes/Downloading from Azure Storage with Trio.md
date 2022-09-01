@@ -1,8 +1,8 @@
 ---
-tags: [Python, Python/trio]
+tags: [Azure/Storage, Python, Python/trio]
 title: Downloading from Azure Storage with Trio
 created: '2022-06-08T13:36:50.871Z'
-modified: '2022-06-08T13:38:01.571Z'
+modified: '2022-09-01T03:00:03.066Z'
 ---
 
 # Downloading from Azure Storage with Trio

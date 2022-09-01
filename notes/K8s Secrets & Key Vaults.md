@@ -3,7 +3,7 @@ favorited: true
 tags: [Kubernetes]
 title: K8s Secrets & Key Vaults
 created: '2022-01-17T04:06:58.783Z'
-modified: '2022-01-20T11:46:58.096Z'
+modified: '2022-08-18T09:13:51.781Z'
 ---
 
 # K8s Secrets & Key Vaults
@@ -49,4 +49,14 @@ $payload = "{\`"username\`": \`"$env:USERNAME\`", \`"password\`": \`"$password\`
 $key_vault = 'smc-ae-kv-651fcd'
 az keyvault secret set --vault-name $key_vault --name "argocd--ghe-creds" --value "$payload"
 az keyvault secret set-attributes --vault-name $key_vault --name "argocd--ghe-creds" --content-type 'application/json'
+```
+
+## Image-Pull Secret
+
+```
+kubectl create secret docker-registry <my-secret-name> \
+    --namespace <my-namespace> \
+    --docker-server='<my-registry>.azurecr.io' \
+    --docker-username='<username-chosen-in-portal>' \
+    --docker-password='<password-from-portal'
 ```
