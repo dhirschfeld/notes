@@ -1,8 +1,8 @@
 ---
-tags: [Azure, Azure/Postgres]
+tags: [Azure, Azure/DNS, Azure/Postgres]
 title: DNS configuration patterns for Azure Database for PostgreSQL - Flexible Server
 created: '2021-10-07T12:11:42.093Z'
-modified: '2021-11-30T08:52:28.910Z'
+modified: '2022-09-03T11:14:02.456Z'
 ---
 
 # DNS configuration patterns for Azure Database for PostgreSQL - Flexible Server

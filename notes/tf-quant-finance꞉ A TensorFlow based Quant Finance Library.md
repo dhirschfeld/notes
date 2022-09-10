@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [Quantitative Finance]
+tags: [Quantitative Finance, Quantitative Finance/Pricing Libraries]
 title: 'tf-quant-finance: A TensorFlow based Quant Finance Library'
 created: '2021-01-30T11:45:18.459Z'
-modified: '2021-04-03T22:52:17.912Z'
+modified: '2022-09-10T02:19:02.536Z'
 ---
 
 # `tf-quant-finance`: A TensorFlow based Quant Finance Library
