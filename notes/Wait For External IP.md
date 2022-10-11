@@ -2,7 +2,7 @@
 tags: [Terraform]
 title: Wait For External IP
 created: '2022-09-12T11:45:36.726Z'
-modified: '2022-09-12T11:46:55.952Z'
+modified: '2022-09-27T04:42:03.576Z'
 ---
 
 # Wait For External IP
@@ -19,6 +19,7 @@ resource "null_resource" "wait_for_external_ip" {
       set -eou pipefail
       tmpfile=$(mktemp)
       trap "rm -fv $tmpfile" EXIT
+      az account set -n "${data.azurerm_subscription.current.display_name}"
       az aks get-credentials -f $tmpfile -n ${var.cluster_name} -g ${var.cluster_resource_group} --admin
       export KUBECONFIG=$tmpfile
       deadline=$(( $(date +%s) + 20 ))
