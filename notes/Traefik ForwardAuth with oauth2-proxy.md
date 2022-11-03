@@ -1,8 +1,8 @@
 ---
-tags: [Kubernetes, Kubernetes/Authentication, Kubernetes/Traefik]
+tags: [Kubernetes, Kubernetes/Authentication, Kubernetes/Ingress]
 title: Traefik ForwardAuth with oauth2-proxy
 created: '2022-09-18T23:56:01.077Z'
-modified: '2022-09-19T01:02:50.745Z'
+modified: '2022-10-28T10:00:16.681Z'
 ---
 
 # Traefik ForwardAuth with `oauth2-proxy`
