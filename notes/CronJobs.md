@@ -2,7 +2,7 @@
 tags: [Kubernetes]
 title: CronJobs
 created: '2022-11-04T03:27:59.814Z'
-modified: '2022-11-04T03:28:54.390Z'
+modified: '2022-12-01T04:17:05.433Z'
 ---
 
 # CronJobs
@@ -17,8 +17,11 @@ spec:
   schedule: "0 0 * * *"
   jobTemplate:
     spec:
+      backoffLimit: 6
+      ttlSecondsAfterFinished: {{ mul 60 60 24 3 }}
       template:
         spec:
+          enableServiceLinks: False
           containers:
           - name: azure-cli
             image: mcr.microsoft.com/azure-cli:latest
