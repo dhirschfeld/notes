@@ -2,7 +2,7 @@
 tags: [Azure]
 title: AD Permission IDs
 created: '2022-12-03T03:45:04.451Z'
-modified: '2022-12-03T03:45:21.000Z'
+modified: '2022-12-04T13:02:14.428Z'
 ---
 
 # AD Permission IDs
@@ -30,7 +30,7 @@ locals {
 
   # https://docs.microsoft.com/en-us/graph/permissions-reference
   # $appRoles = $(az ad sp list --display-name "Microsoft Graph" | ConvertFrom-Json).appRoles
-  # $permissions = $(az ad sp list --display-name "Microsoft Graph" | ConvertFrom-Json).oauth2Permissions
+  # permissions=$(az ad sp list --filter "displayname eq 'Microsoft Graph'" | jq '.[].oauth2PermissionScopes | map({(.value): .id}) | add' | jq -S)
   permissions = {
     ms_graph = {
       "email"     = "64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0"
