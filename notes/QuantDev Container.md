@@ -1,8 +1,10 @@
 ---
+favorited: true
+pinned: true
 tags: [Python/JupyterLab]
 title: QuantDev Container
 created: '2023-03-06T01:18:44.471Z'
-modified: '2023-03-06T01:19:08.347Z'
+modified: '2023-03-06T01:20:23.737Z'
 ---
 
 # QuantDev Container
