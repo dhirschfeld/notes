@@ -2,11 +2,12 @@
 tags: [Kubernetes, Kubernetes/Authentication, Kubernetes/Ingress]
 title: Traefik ForwardAuth with oauth2-proxy
 created: '2022-09-18T23:56:01.077Z'
-modified: '2022-10-28T10:00:16.681Z'
+modified: '2023-06-15T01:05:21.449Z'
 ---
 
 # Traefik ForwardAuth with `oauth2-proxy`
 
+* https://g-c.dev/notes/oauth2proxy-azuread-traefik
 * https://github.com/oauth2-proxy/oauth2-proxy/issues/1768
 * https://github.com/oauth2-proxy/oauth2-proxy/issues/1639#issuecomment-1224763241
 

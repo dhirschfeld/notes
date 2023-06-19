@@ -1,8 +1,8 @@
 ---
-tags: [System Administration/Bash]
+tags: [System Administration/Bash, System Administration/WSL]
 title: Setting Up WSL
 created: '2022-07-03T23:32:54.737Z'
-modified: '2022-07-03T23:56:45.425Z'
+modified: '2023-06-15T01:08:26.739Z'
 ---
 
 # Setting Up WSL
