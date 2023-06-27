@@ -2,7 +2,7 @@
 tags: [Kubernetes]
 title: CronJobs
 created: '2022-11-04T03:27:59.814Z'
-modified: '2023-06-02T04:16:07.943Z'
+modified: '2023-06-27T03:44:53.426Z'
 ---
 
 # CronJobs
@@ -36,6 +36,9 @@ spec:
                 .Values.container.image.tag
               }}
               imagePullPolicy: "{{ .Values.container.image.pullPolicy }}"
+              env:
+                - name: APP_DEBUG
+                  value: "{{ .Values.debug }}"
               envFrom:
                 - secretRef:
                     name: my-secret
