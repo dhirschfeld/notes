@@ -110,7 +110,7 @@ ENV SHELL="/bin/bash"
 
 # Allow user to sudo
 RUN echo 'user ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
-
+# echo "username  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/username
 
 # Install FiraCode Nerd Font
 RUN <<EOF
